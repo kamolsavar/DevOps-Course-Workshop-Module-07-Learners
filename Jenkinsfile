@@ -10,6 +10,7 @@ pipeline {
                 echo 'Building..'
                 sh 'npm install'
                 sh 'npm run build'
+                slackSend color: "good", message: "Message from Jenkins Pipeline"
                 }  
             }
         }
