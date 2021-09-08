@@ -18,6 +18,7 @@ pipeline {
                 dir('./DotnetTemplate.Web') {
                 echo 'Building..'
                 sh 'npm t'
+                sh 'npm run lint'
                 }   
             }
         }
